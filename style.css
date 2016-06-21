@@ -1,0 +1,70 @@
+body{
+  text-align:center;
+  color:white;
+  text-shadow:1px 1px black;
+  text-transform:uppercase;
+}
+html{
+  box-shadow:inset -5px -5px rgba(0,0,0,.2), inset 5px 5px rgba(255,255,255,.2);
+  width:200px;
+}
+
+button{
+  
+  box-shadow:inset 0px -3px  rgba(0,0,0,.1), 2px 2px rgba(0,0,0,.1);
+  border:none;
+  margin:0px 5px 10px 5px;
+  background-color:rgba(255,255,255,.1);
+  border-radius:5px;
+  cursor:pointer;
+  transition:all .5s;
+  
+  top:5px;
+  right:5px;
+}
+button img{
+  text-align:center;
+}
+button:hover{
+  transition:all .5s;
+  opacity:1;
+}
+
+#favorites{
+  height:0px;
+  background-color:white;
+  border-radius:5px;
+  opacity:0;
+  transition:all .5s;
+  overflow-y:scroll;
+  border:1px solid rgba(0,0,0,.7);
+}
+#favorites::-webkit-scrollbar {
+    display:none;
+  }
+#favorites p{
+  height:40px;
+  margin:0px;
+  box-sizing:border-box;
+  padding-top:12px;
+  font-size:15px;
+  box-shadow:inset 0px -5px rgba(0,0,0,.4);
+}
+#favorite_options{
+  width:100%;
+  position:fixed;
+  top:97px;
+  left:10px;
+  opacity:0;
+  text-align:left;
+}
+#favorite_options button{
+  display:inline-block;
+}
+#favoriteButton, #toggleDeleteButton{
+  border-radius:0px;
+  background-color:none;
+  margin:0px;
+  border:none;
+  padding:5px;
+}
